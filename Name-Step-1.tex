@@ -4,31 +4,37 @@
 \usepackage{amsmath,amsfonts,amssymb}
 \usepackage{graphicx}
 \usepackage{a4wide}
-\title{Reconstructed abstract of the paper ``Put the paper title or DOI here''}
+\title{Reconstructed abstract of the paper Neural Ordinary Differential Equations}
 %\author{not specified, not necessary here}
 \date{}
 \begin{document}
 \maketitle
 
 \begin{abstract}
-The abstract is limited to 600 characters. It may contain a wide-range field of the investigated problem, narrow problem to focus on, features and conditions of the problem, the idea of the suggested solution, the novelty and alternative solutions to compare with, application to illustrate with.
+This paper presents a new approach to deep learning that treats neural networks as dynamic systems with continuous time rather than the traditional discrete sequence of transformations (layers). The key idea is to parameterise the continuous
+dynamics of hidden units using an ordinary differential equation (ODE) specified by neural network. A adjoint gradient method for end-to-end training is shown using continuous normalising flows as an example.
+
 \end{abstract}
-\paragraph{Keywords:} The Art On Scientific Research, Abstract Reconstruction, Please Put Yours 
+\paragraph{Keywords:} 
+
+Continuous-time dynamics,
+ODE solvers,
+Adjoint method,
+Time-series prediction,
+Latent variable models
+
+
+
+
 
 \paragraph{Highlights:}
 \begin{enumerate}
-\item Highlight one
-\item Highlight two
-\item Highlight three
+\item Neural ODEs generalize neural networks by modeling transformations as continuous-time dynamical systems using ordinary differential equations
+\item Neural ODEs use the adjoint method for memory-efficient backpropagation.
+\item The model dynamically adjusts computation based on the complexity of the input.
+\item Neural ODEs are well-suited for irregular time-series prediction, physics simulations, and latent variable modeling.
 \end{enumerate}
 
 \section{Introduction}
-Explain the reasons you chose the paper~\cite{9095246}. The reasons shall not be personal. They shall enlighten the novelty, impact, or contributions.  
-%\begin{figure}
-%\includegraphics[scale=0.35]{SVD_derint}
-%\caption{A rigorous description of what the reader sees on the plot and the consequences of the shown result}
-%\end{figure}
-
-\bibliographystyle{unsrt}
-\bibliography{Name-theArt}
+In a quantum mechanics problem one follows the evolution of the projection of the spin of a qubit over time, if one considers a system with two or more qubits, then by measuring the spin on one qubit the quantum state of the overall system is destroyed, and this is a problem, one wants to make an estimate on the spin of an individual particle without making a measurement.  This method seems attractive for recovering the hidden state dynamics of an individual qubit and predicting the spin value
 \end{document}
